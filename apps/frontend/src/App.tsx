@@ -1,3 +1,4 @@
+import { Person, stringify2 } from "@repo/utils";
 import { useState } from "react";
 import "./App.css";
 import reactLogo from "./assets/react.svg";
@@ -60,6 +61,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <pre>{JSON.stringify(import.meta.env, null, 2)}</pre>
+      <pre>{stringify2(new Person("Misha", "Kruglenko", 15))}</pre>
     </>
   );
 }
